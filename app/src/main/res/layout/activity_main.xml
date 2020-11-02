@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMainBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layMainBottom"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginBottom="32dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvMainHome"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="68dp"-->
+<!--            android:layout_marginLeft="108dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/select_home_btn"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:paddingLeft="76dp"-->
+<!--            android:text="@string/main_home"-->
+<!--            android:textColor="@color/selector_main_btn_color"-->
+<!--            android:textSize="@dimen/main_bottom_text_size"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvMainWatch"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="68dp"-->
+<!--            android:layout_marginLeft="48dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/select_watch_btn"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:paddingLeft="76dp"-->
+<!--            android:text="@string/main_watch"-->
+<!--            android:textColor="@color/selector_main_btn_color"-->
+<!--            android:textSize="@dimen/main_bottom_text_size"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvMainSetting"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="68dp"-->
+<!--            android:layout_marginLeft="48dp"-->
+<!--            android:layout_marginRight="108dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/select_setting_btn"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:paddingLeft="76dp"-->
+<!--            android:text="@string/main_setting"-->
+<!--            android:textColor="@color/selector_main_btn_color"-->
+<!--            android:textSize="@dimen/main_bottom_text_size"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/layMainContainer"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@id/layMainBottom"/>-->
+    <RelativeLayout
+        android:id="@+id/layMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

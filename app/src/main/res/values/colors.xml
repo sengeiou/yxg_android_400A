@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--login-->
+    <color name="color_login_btn">#6A0000</color>
+    <color name="color_login_edt_hint">#4C4948</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--main-->
+    <color name="transparent">#00000000</color>
+
+    <!--member list-->
+    <color name="member_list_title_color">#333333</color>
+    <color name="member_list_search_text_color">#FFFFFF</color>
+    <color name="item_member_text_color">#5E2617</color>
+    <color name="black">#000000</color>
+    <color name="sorting_text_color">#744422</color>
+
+    <!--setting fragment-->
+    <color name="setting_text_color">#333333</color>
+
+    <!--watch fragment-->
+    <color name="watch_progress_bg">#CFB17F</color>
+    <color name="watch_record_text_color">#333333</color>
+
+    <!--setting my info-->
+    <color name="setting_my_info_text_color">#666666</color>
+    <!--setting modify psw-->
+    <color name="setting_title_color">#333333</color>
+
+    <!--choose birthday-->
+    <color name="year_text_color">#5E2617</color>
+
+    <color name="measure_ok_color">#32B000</color>
+    <color name="measure_exception_color">@android:color/holo_red_light</color>
+
+    <color name="setting_language_text_color">#8D3D1A</color>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_watch">
+
+    <TextView
+        android:id="@+id/tvSettingLgTitle"
+        style="@style/PageTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setting_multi_language"/>
+
+    <TextView
+        android:id="@+id/layTvBack"
+        style="@style/BackBtnStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/page_bottom_two_btn_margin_horizon"
+        android:layout_marginBottom="@dimen/back_btn_margin_bottom"/>
+
+    <LinearLayout
+        android:layout_width="404dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@mipmap/ic_setting_lg_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/laySettingLgCN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/language_cn"
+                android:textColor="@color/setting_language_text_color"
+                android:textSize="@dimen/account_title_text_size"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/ivSettingLgCNChecked"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@mipmap/ic_setting_lg_checked"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@mipmap/ic_setting_lg_divider"/>
+
+        <LinearLayout
+            android:id="@+id/laySettingLgTw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/language_tw"
+                android:textColor="@color/setting_language_text_color"
+                android:textSize="@dimen/account_title_text_size"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/ivSettingLgTwChecked"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:src="@mipmap/ic_setting_lg_checked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@mipmap/ic_setting_lg_divider"/>
+
+        <LinearLayout
+            android:id="@+id/laySettingLgEnglish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/language_english"
+                android:textColor="@color/setting_language_text_color"
+                android:textSize="@dimen/account_title_text_size"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/ivSettingLgEnglishChecked"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:src="@mipmap/ic_setting_lg_checked"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

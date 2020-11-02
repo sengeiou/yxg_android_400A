@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_watch">
+
+    <TextView
+        android:id="@+id/tvCureDetailTitle"
+        style="@style/PageTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cure_detail_title"/>
+
+    <TextView
+        android:id="@+id/layTvBack"
+        style="@style/BackBtnStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/page_bottom_two_btn_margin_horizon"
+        android:layout_marginBottom="@dimen/back_btn_margin_bottom"/>
+
+    <LinearLayout
+        android:id="@+id/layCureDetailContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCureDetailTitle"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCurePerson"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cure_person"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_old_person_text_large"/>
+
+            <TextView
+                android:id="@+id/tvCureBirthday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:text="@string/cure_person_birthday"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_old_person_text_large"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSortingMethod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="@string/sorting_method"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_old_person_text_large"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSortingHead"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/sorting_head"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_old_person_text_large"/>
+
+            <TextView
+                android:id="@+id/tvMagneticFieldIntensity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:text="@string/magnetic_field_intensity"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_old_person_text_large"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvBestAcupoint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/best_acupoint"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_old_person_text_large"/>
+
+            <TextView
+                android:id="@+id/tvTreatTimeDuration"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3"
+                android:text="@string/treat_time_duration"
+                android:textColor="@color/black"
+                android:textSize="@dimen/normal_old_person_text_large"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTreatTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="@string/treat_time"
+            android:textColor="@color/black"
+            android:textSize="@dimen/normal_old_person_text_large"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layCureDetailBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_btn_height"
+        android:layout_below="@id/layCureDetailContent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnReCure"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/ic_login_btn_bg"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/retry_cure"
+                android:textColor="@color/color_login_btn"
+                android:textSize="@dimen/login_btn_text_size"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/btnChooseCureMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/ic_choose_sort_methond_bg"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/choose_cure_method"
+                android:textColor="@color/color_login_btn"
+                android:textSize="@dimen/login_btn_text_size"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

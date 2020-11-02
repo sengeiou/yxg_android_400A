@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_watch">
+
+    <TextView
+        android:id="@+id/tvSettingModifyPswTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/setting_modify_psw"
+        android:textColor="@color/color_login_btn"
+        android:textSize="@dimen/login_edt_text_size"
+        android:textStyle="bold"/>
+
+    <include
+        layout="@layout/layout_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/back_btn_margin_left"
+        android:layout_marginBottom="@dimen/back_btn_margin_bottom"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/account_edit_width"
+            android:layout_height="@dimen/account_edit_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/spinnerInternational"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/ic_setting_myinfo_edt_bg"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="22sp"
+                app:arrowTint="@color/setting_my_info_text_color"
+                app:backgroundSelector="@drawable/spinner_drawable_bg"
+                app:textTint="@color/black"/>
+
+            <EditText
+                android:id="@+id/edtPhoneNum"
+                android:layout_width="340dp"
+                android:layout_height="@dimen/account_edit_height"
+                android:background="@mipmap/ic_setting_myinfo_edt_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/phone_num"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/setting_my_info_text_color"
+                android:textSize="@dimen/login_edt_text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/account_edit_width"
+            android:layout_height="@dimen/account_edit_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtVerifyCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_setting_myinfo_edt_bg"
+                android:gravity="center_vertical"
+                android:hint="@string/verify_code"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="15"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/setting_my_info_text_color"
+                android:textSize="@dimen/login_edt_text_size"/>
+
+            <TextView
+                android:id="@+id/btnGetCaptcha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="@string/verify_code"
+                android:textColor="@color/setting_title_color"
+                android:textSize="@dimen/login_edt_text_size"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtPsw"
+            android:layout_width="@dimen/account_edit_width"
+            android:layout_height="@dimen/account_edit_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="23dp"
+            android:background="@mipmap/ic_setting_myinfo_edt_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/psw"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/setting_my_info_text_color"
+            android:textSize="@dimen/login_edt_text_size"/>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="@dimen/small_btn_width"
+            android:layout_height="@dimen/small_btn_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+            android:background="@mipmap/ic_confirm_btn_bg"
+            android:gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/color_login_btn"
+            android:textSize="@dimen/login_btn_text_size"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

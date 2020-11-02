@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_login_bg">
+
+    <TextView
+        android:id="@+id/tvLoginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/login"
+        android:textColor="@color/color_login_btn"
+        android:textSize="@dimen/login_edt_text_size"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/layLoginName"
+        android:layout_width="480dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="350dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/spinnerInternational"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/ic_fg_psw_bg"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="22sp"
+            app:arrowTint="@color/setting_my_info_text_color"
+            app:backgroundSelector="@drawable/spinner_drawable_bg"
+            app:textTint="@color/black"/>
+
+        <EditText
+            android:id="@+id/edtLoginName"
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/ic_edt_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/login_edt_name_hint"
+            android:imeOptions="actionNext"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:textColorHint="@color/color_login_edt_hint"
+            android:textSize="@dimen/login_edt_text_size"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtLoginPsw"
+        android:layout_width="480dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/layLoginName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:background="@mipmap/ic_edt_bg"
+        android:gravity="center_vertical"
+        android:hint="@string/login_edt_psw_hint"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textColorHint="@color/color_login_edt_hint"
+        android:textSize="@dimen/login_edt_text_size"/>
+
+    <TextView
+        android:id="@+id/tvForgetPsw"
+        android:layout_width="180dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/edtLoginPsw"
+        android:layout_alignRight="@id/edtLoginPsw"
+        android:layout_marginTop="19dp"
+        android:background="@mipmap/ic_fg_psw_bg"
+        android:gravity="center"
+        android:text="@string/login_fg_psw"
+        android:textColor="@color/color_login_btn"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/tvSettingWifi"
+        android:layout_width="180dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/edtLoginPsw"
+        android:layout_alignLeft="@id/edtLoginPsw"
+        android:layout_marginTop="19dp"
+        android:background="@mipmap/ic_fg_psw_bg"
+        android:gravity="center"
+        android:text="@string/wifi_connect"
+        android:textColor="@color/color_login_btn"
+        android:textSize="28sp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="300px"
+        android:layout_height="80px"
+        android:layout_below="@id/tvForgetPsw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:background="@mipmap/ic_login_btn_bg"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/color_login_btn"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvDevicesResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:textColor="@color/color_login_btn"
+        android:textSize="@dimen/login_fg_psw_text_size"
+        android:textStyle="bold"/>
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/laySettingWifi"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_marginLeft="36dp"-->
+    <!--android:layout_marginBottom="36dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingTop="16dp"-->
+    <!--android:paddingBottom="16dp">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:ellipsize="end"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:maxLines="1"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="@string/wifi_connect"-->
+    <!--android:textColor="@color/setting_text_color"-->
+    <!--android:textSize="@dimen/setting_text_size"-->
+    <!--android:textStyle="bold"/>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="@dimen/setting_triangle_size"-->
+    <!--android:layout_height="@dimen/setting_triangle_size"-->
+    <!--android:src="@mipmap/ic_setting_right_triangle"/>-->
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

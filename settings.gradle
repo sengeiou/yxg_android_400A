@@ -1,0 +1,1 @@
+include ':app', 'apps:ViewPagerIndicator', ':apps:crpblelib', 'apps:takephoto_library', 'apps:serialportlib'

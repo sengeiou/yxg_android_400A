@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_watch">
+
+    <TextView
+        android:id="@+id/tvChooseSortingMethodProcessTitle"
+        style="@style/PageTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_sorting_method"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivProcessFir"
+                android:layout_width="@dimen/cure_method_bg_size"
+                android:layout_height="@dimen/cure_method_bg_size"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_main_center_btn"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProcessFirFir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/selector_main_btn_color"
+                    android:textSize="@dimen/main_center_text_size"/>
+
+                <TextView
+                    android:id="@+id/tvProcessFirSec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/selector_main_btn_color"
+                    android:textSize="@dimen/main_center_text_size"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivProcessSec"
+                android:layout_width="@dimen/cure_method_bg_size"
+                android:layout_height="@dimen/cure_method_bg_size"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_main_center_btn"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProcessSecFir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/selector_main_btn_color"
+                    android:textSize="@dimen/main_center_text_size"/>
+
+                <TextView
+                    android:id="@+id/tvProcessSecSec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/selector_main_btn_color"
+                    android:textSize="@dimen/main_center_text_size"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivProcessThird"
+                android:layout_width="@dimen/cure_method_bg_size"
+                android:layout_height="@dimen/cure_method_bg_size"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_main_center_btn"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProcessThirdFir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/selector_main_btn_color"
+                    android:textSize="@dimen/main_center_text_size"/>
+
+                <TextView
+                    android:id="@+id/tvProcessThirdSec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/selector_main_btn_color"
+                    android:textSize="@dimen/main_center_text_size"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/layTvBack"
+        style="@style/BackBtnStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/page_bottom_two_btn_margin_horizon"
+        android:layout_marginBottom="@dimen/back_btn_margin_bottom"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/NextBtnStyle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/page_bottom_two_btn_margin_horizon"
+        android:layout_marginBottom="@dimen/back_btn_margin_bottom"
+        android:visibility="gone"/>
+
+</RelativeLayout>

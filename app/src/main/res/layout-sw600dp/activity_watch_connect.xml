@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_main_watch">
+
+    <TextView
+        android:id="@+id/tvWatchConnectTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/color_login_btn"
+        android:text="@string/connect_title"
+        android:textSize="@dimen/login_edt_text_size"
+        android:textStyle="bold"/>
+
+    <include
+        layout="@layout/layout_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/back_btn_margin_left"
+        android:layout_marginBottom="@dimen/back_btn_margin_bottom"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="120dp"
+        android:layout_marginTop="@dimen/page_content_margin_top"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvWatchConnectedDevicesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:text="@string/connected_devices"
+            android:textColor="@color/member_list_title_color"
+            android:textSize="@dimen/normal_old_person_text_size"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/layConnectedWatch"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="14dp"
+            android:background="@mipmap/ic_watch_connected_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvWatchName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/setting_title_color"
+                android:textSize="@dimen/normal_old_person_text_large"/>
+
+            <TextView
+                android:id="@+id/tvWatchConnectState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/connect"
+                android:textColor="@color/setting_title_color"
+                android:textSize="@dimen/normal_old_person_text_large"/>
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="13dp"
+                android:src="@mipmap/ic_setting_lg_checked"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvWatchNearbyDevicesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:text="@string/nearby_devices"
+            android:textColor="@color/member_list_title_color"
+            android:textSize="@dimen/normal_old_person_text_size"/>
+
+        <LinearLayout
+            android:id="@+id/layNearbyDevices"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="14dp"
+            android:layout_weight="1"
+            android:background="@mipmap/ic_watch_unconnected_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcvNearbyWatch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvWatchMyDevicesTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="33dp"
+            android:text="@string/my_devices"
+            android:textColor="@color/member_list_title_color"
+            android:textSize="@dimen/normal_old_person_text_size"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/layMyDevices"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="34dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:background="@mipmap/ic_watch_unconnected_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rcvMyDevice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

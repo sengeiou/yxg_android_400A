@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_watch">
+
+    <TextView
+        android:id="@+id/tvSettingAboutUsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/setting_about"
+        android:textColor="@color/color_login_btn"
+        android:textSize="@dimen/login_edt_text_size"
+        android:textStyle="bold"/>
+
+    <include
+        layout="@layout/layout_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/back_btn_margin_left"
+        android:layout_marginBottom="@dimen/back_btn_margin_bottom"/>
+
+    <ImageView
+        android:id="@+id/ivSettingAboutUsLogo"
+        android:layout_width="@dimen/login_logo_width"
+        android:layout_height="@dimen/login_logo_height"
+        android:layout_below="@id/tvSettingAboutUsTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:src="@mipmap/ic_logo"/>
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvSettingAboutUsVersionCode"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/ivSettingAboutUsLogo"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="1dp"-->
+    <!--android:textColor="@color/setting_title_color"-->
+    <!--android:textSize="@dimen/normal_old_person_text_large"/>-->
+
+    <LinearLayout
+        android:id="@+id/layAboutUsInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivSettingAboutUsLogo"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="47dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSettingAboutUsCompanyPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black"
+                android:textSize="26sp"/>
+
+            <TextView
+                android:id="@+id/tvSettingAboutUsCompanyEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black"
+                android:textSize="26sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSettingAboutUsWebchatPublic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/tvSettingAboutUsCompanyAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAboutComp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layAboutUsInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Copyright©2005-2019玉玄宫科技 All right reserved"
+        android:textColor="@color/black"
+        android:textSize="26sp"/>
+
+    <TextView
+        android:id="@+id/tvBottomAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAboutComp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="©2019玉玄宫科技股份有限公司 版权所有"
+        android:textColor="@color/black"
+        android:textSize="26sp"/>
+
+    <!--<ImageView-->
+    <!--android:layout_width="400dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginBottom="40dp"-->
+    <!--android:background="@mipmap/ic_setting_about_us_bottom_bg"/>-->
+
+</RelativeLayout>

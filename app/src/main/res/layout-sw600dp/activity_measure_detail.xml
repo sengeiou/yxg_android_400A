@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_watch">
+
+    <TextView
+        android:id="@+id/tvMeasureDetailTitle"
+        style="@style/PageTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/measure_detail"/>
+
+    <TextView
+        android:id="@+id/layTvBack"
+        style="@style/BackBtnStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/page_bottom_two_btn_margin_horizon"
+        android:layout_marginBottom="@dimen/back_btn_margin_bottom"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="128dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/measure_average_heart_rate"
+                android:textColor="@color/black"
+                android:textSize="@dimen/account_title_text_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/measure_blood_pressure"
+                android:textColor="@color/black"
+                android:textSize="@dimen/account_title_text_size"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/measure_blood_oxygen"
+                android:textColor="@color/black"
+                android:textSize="@dimen/account_title_text_size"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_measure_detail_item_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginBottom="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvMeasureHeartRateResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#D80000"
+                        android:textSize="@dimen/normal_old_person_text_size"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/count_minutes"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/normal_old_person_text_size"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+
+                    <ImageView
+                        android:id="@+id/ivMeasureHeartRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_measure_detail_heart_rate"/>
+
+                    <ImageView
+                        android:id="@+id/ivMeasureHeartRatePoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/ic_measure_detail_point"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvMeasureHeartRateTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="19dp"
+                    android:text="@string/heart_rate_ok"
+                    android:textColor="#32B000"
+                    android:textSize="@dimen/normal_old_person_text_large"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingExtra="15dp"
+                    android:text="@string/heart_rate_desc"
+                    android:textColor="#333333"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_measure_detail_item_bg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginBottom="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvMeasureBloodPressureResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#D80000"
+                        android:textSize="@dimen/normal_old_person_text_size"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blood_pressure_unit"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/normal_old_person_text_size"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+
+                    <ImageView
+                        android:id="@+id/ivMeasureBloodPressure"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/ic_measure_detail_blood_presure"/>
+
+                    <ImageView
+                        android:id="@+id/ivMeasureBloodPressurePoint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/ic_measure_detail_point"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvMeasureBloodPressureTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="19dp"
+                    android:text="@string/blood_pressure_ok"
+                    android:textColor="#32B000"
+                    android:textSize="@dimen/normal_old_person_text_large"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingExtra="15dp"
+                    android:text="@string/blood_pressure_desc"
+                    android:textColor="#333333"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@mipmap/ic_measure_detail_item_bg">
+
+                <ImageView
+                    android:id="@+id/ivMeasureBloodOxygen"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="88dp"
+                    android:background="@mipmap/ic_measure_detail_blood_oxygen_img"/>
+
+                <ImageView
+                    android:id="@+id/ivMeasureBloodOxygenTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp"
+                    android:layout_below="@id/ivMeasureBloodOxygen"
+                    android:src="@mipmap/ic_measure_detail_blood_oxygen_txt"/>
+
+                <ImageView
+                    android:id="@+id/ivMeasureBloodOxygenPoint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/ivMeasureBloodOxygen"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/ic_measure_detail_point"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="31dp"
+                    android:layout_marginBottom="22dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvMeasureBloodOxygenResult"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#D80000"
+                        android:textSize="@dimen/normal_old_person_text_size"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/blood_oxygen_unit"
+                        android:textColor="#333333"
+                        android:textSize="@dimen/normal_old_person_text_size"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvMeasureBloodOxygenTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivMeasureBloodOxygenTxt"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/blood_oxygen_ok"
+                    android:textColor="#32B000"
+                    android:textSize="@dimen/normal_old_person_text_large"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvMeasureBloodOxygenTips"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginRight="16dp"
+                    android:lineSpacingExtra="15dp"
+                    android:text="@string/blood_oxygen_desc"
+                    android:textColor="#333333"
+                    android:textSize="18sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

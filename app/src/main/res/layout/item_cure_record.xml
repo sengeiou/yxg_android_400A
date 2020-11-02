@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@mipmap/ic_item_member_list_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@mipmap/ic_cure_record_avatar"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvItemCureName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/item_member_text_color"
+                android:textSize="@dimen/normal_old_person_text_size"/>
+
+            <TextView
+                android:id="@+id/tvItemCureDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/item_member_text_color"
+                android:textSize="@dimen/normal_old_person_text_size"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRetryCure"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:background="@mipmap/ic_member_list_go_cure"
+            android:gravity="center"
+            android:text="@string/retry_cure"
+            android:textColor="@color/color_login_btn"
+            android:textSize="@dimen/normal_old_person_text_large"/>
+
+        <Button
+            android:id="@+id/btnModifyCureRecord"
+            android:layout_width="238dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="24dp"
+            android:background="@mipmap/ic_member_list_go_cure_right"
+            android:gravity="center"
+            android:text="@string/modify_cure_method"
+            android:textColor="@color/color_login_btn"
+            android:textSize="@dimen/normal_old_person_text_large"/>
+
+    </LinearLayout>
+
+</LinearLayout>

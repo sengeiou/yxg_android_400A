@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_watch">
+
+    <TextView
+        android:id="@+id/tvChooseBirthdayTitle"
+        style="@style/PageTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_choose_birthday"/>
+
+    <LinearLayout
+        android:id="@+id/layCalendarTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/page_content_margin_top"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/layCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="37.5dp"
+            android:background="@mipmap/ic_choose_birthday_item_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="80dp"
+                android:text="@string/calendar"
+                android:textColor="@color/color_login_btn"
+                android:textSize="@dimen/normal_old_person_text_size"/>
+
+            <ImageView
+                android:id="@+id/ivCalendarChecked"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:src="@mipmap/ic_setting_lg_checked"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layLunarCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37.5dp"
+            android:background="@mipmap/ic_choose_birthday_item_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="80dp"
+                android:text="@string/lunar_calendar"
+                android:textColor="@color/color_login_btn"
+                android:textSize="@dimen/normal_old_person_text_size"/>
+
+            <ImageView
+                android:id="@+id/ivLunarCalendarChecked"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="8dp"
+                android:src="@mipmap/ic_setting_lg_checked"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layYMDContainer"
+        android:layout_width="530dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layCalendarTab"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvChooseBirthdayYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@color/year_text_color"
+            android:textSize="@dimen/account_title_text_size"/>
+
+        <TextView
+            android:id="@+id/tvChooseBirthdayMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/year_text_color"
+            android:textSize="@dimen/account_title_text_size"/>
+
+        <TextView
+            android:id="@+id/tvChooseBirthdayDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/year_text_color"
+            android:textSize="@dimen/account_title_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layChooseDateContainer"
+        android:layout_width="530dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layYMDContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="270dp"
+            android:layout_weight="1"
+            android:background="@mipmap/ic_choose_birthday_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivAddYear"
+                android:layout_width="@dimen/add_btn_size"
+                android:layout_height="@dimen/add_btn_size"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_choose_birthday_add"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="13dp"
+                android:background="@mipmap/ic_choose_birthday_divider"/>
+
+            <TextView
+                android:id="@+id/tvCurrentYear"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/year_text_color"
+                android:textSize="@dimen/normal_old_person_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="12dp"
+                android:background="@mipmap/ic_choose_birthday_divider"/>
+
+            <ImageView
+                android:id="@+id/ivMinusYear"
+                android:layout_width="@dimen/minus_btn_size"
+                android:layout_height="@dimen/minus_btn_size"
+                android:padding="10dp"
+                android:src="@mipmap/ic_choose_birthday_minus"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="270dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_weight="1"
+            android:background="@mipmap/ic_choose_birthday_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivAddMonth"
+                android:layout_width="@dimen/add_btn_size"
+                android:layout_height="@dimen/add_btn_size"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_choose_birthday_add"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="13dp"
+                android:background="@mipmap/ic_choose_birthday_divider"/>
+
+            <TextView
+                android:id="@+id/tvCurrentMonth"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/year_text_color"
+                android:textSize="@dimen/normal_old_person_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="12dp"
+                android:background="@mipmap/ic_choose_birthday_divider"/>
+
+            <ImageView
+                android:id="@+id/ivMinusMonth"
+                android:layout_width="@dimen/minus_btn_size"
+                android:layout_height="@dimen/minus_btn_size"
+                android:padding="10dp"
+                android:src="@mipmap/ic_choose_birthday_minus"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="270dp"
+            android:layout_weight="1"
+            android:background="@mipmap/ic_choose_birthday_bg"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivAddDay"
+                android:layout_width="@dimen/add_btn_size"
+                android:layout_height="@dimen/add_btn_size"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@mipmap/ic_choose_birthday_add"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="13dp"
+                android:background="@mipmap/ic_choose_birthday_divider"/>
+
+            <TextView
+                android:id="@+id/tvCurrentDay"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/year_text_color"
+                android:textSize="@dimen/normal_old_person_text_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="12dp"
+                android:background="@mipmap/ic_choose_birthday_divider"/>
+
+            <ImageView
+                android:id="@+id/ivMinusDay"
+                android:layout_width="@dimen/minus_btn_size"
+                android:layout_height="@dimen/minus_btn_size"
+                android:padding="10dp"
+                android:src="@mipmap/ic_choose_birthday_minus"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/layTvBack"
+        style="@style/BackBtnStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/page_bottom_two_btn_margin_horizon"
+        android:layout_marginBottom="@dimen/back_btn_margin_bottom"/>
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/NextBtnStyle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/page_bottom_two_btn_margin_horizon"
+        android:layout_marginBottom="@dimen/back_btn_margin_bottom"/>
+
+</RelativeLayout>

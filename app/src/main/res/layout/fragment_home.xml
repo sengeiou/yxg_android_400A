@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_home"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/layMainBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvMainHome"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="108dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_home_btn"
+            android:gravity="center_vertical"
+            android:paddingLeft="76dp"
+            android:text="@string/main_home"
+            android:textColor="@color/selector_main_btn_color"
+            android:textSize="@dimen/main_bottom_text_size"/>
+
+        <TextView
+            android:id="@+id/tvMainWatch"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_watch_btn"
+            android:gravity="center_vertical"
+            android:paddingLeft="76dp"
+            android:text="@string/main_watch"
+            android:textColor="@color/selector_main_btn_color"
+            android:textSize="@dimen/main_bottom_text_size"/>
+
+        <TextView
+            android:id="@+id/tvMainSetting"
+            android:layout_width="0dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="108dp"
+            android:layout_weight="1"
+            android:background="@drawable/select_setting_btn"
+            android:gravity="center_vertical"
+            android:paddingLeft="76dp"
+            android:text="@string/main_setting"
+            android:textColor="@color/selector_main_btn_color"
+            android:textSize="@dimen/main_bottom_text_size"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layMainBottom">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivStartCure"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selector_main_center_btn"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvStartCureFir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/start"
+                        android:gravity="center"
+                        android:textColor="@color/selector_main_btn_color"
+                        android:textSize="@dimen/main_center_text_size"/>
+
+                    <TextView
+                        android:id="@+id/tvStartCureSec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cure"
+                        android:gravity="center"
+                        android:textColor="@color/selector_main_btn_color"
+                        android:textSize="@dimen/main_center_text_size"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivMemberList"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selector_main_center_btn"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvMemberListFir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/member"
+                        android:gravity="center"
+                        android:textColor="@color/selector_main_btn_color"
+                        android:textSize="@dimen/main_center_text_size"/>
+
+                    <TextView
+                        android:id="@+id/tvMemberListSec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list"
+                        android:gravity="center"
+                        android:textColor="@color/selector_main_btn_color"
+                        android:textSize="@dimen/main_center_text_size"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivCureRecord"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/selector_main_center_btn"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvCureRecordFir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cure"
+                        android:gravity="center"
+                        android:textColor="@color/selector_main_btn_color"
+                        android:textSize="@dimen/main_center_text_size"/>
+
+                    <TextView
+                        android:id="@+id/tvCureRecordSec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/record"
+                        android:gravity="center"
+                        android:textColor="@color/selector_main_btn_color"
+                        android:textSize="@dimen/main_center_text_size"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPagerBanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"/>
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/viewPagerIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2dip"
+                android:background="@color/transparent"
+                android:padding="6dip"
+                app:unselectedColor="@android:color/white"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

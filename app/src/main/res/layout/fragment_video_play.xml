@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:id="@+id/cacheStatusImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:visibility="gone"/>
+
+    <SeekBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.Holo.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:max="100"
+        android:maxHeight="30dp"
+        android:minHeight="30dp"/>
+
+    <TextView
+        android:id="@+id/btnPauseStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#CFB17F"
+        android:padding="16dp"
+        android:text="@string/start"
+        android:textColor="@color/selector_main_btn_color"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/btnCurrentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnPauseStart"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="36dp"
+        android:padding="16dp"
+        android:text="00:00"
+        android:textColor="@color/selector_main_btn_color"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/btnTotalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:text="30:00"
+        android:textColor="@color/selector_main_btn_color"
+        android:textSize="22sp"/>
+
+    <include
+        layout="@layout/layout_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

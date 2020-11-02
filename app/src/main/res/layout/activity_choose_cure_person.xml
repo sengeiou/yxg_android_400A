@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_watch"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvChooseCurePersonTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/title_choose_cure_person"
+        android:textColor="@color/color_login_btn"
+        android:textSize="@dimen/login_edt_text_size"
+        android:textStyle="bold"/>
+
+    <include
+        layout="@layout/layout_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/back_btn_margin_left"
+        android:layout_marginBottom="@dimen/back_btn_margin_bottom"/>
+
+    <LinearLayout
+        android:id="@+id/layChooseCurePersonSearch"
+        android:layout_width="@dimen/account_edit_width"
+        android:layout_height="@dimen/account_edit_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@mipmap/ic_member_list_search_bg"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtChooseCurePersonSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/member_list_edt_search_hint"
+            android:maxLines="1"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:singleLine="true"
+            android:textColor="@color/color_login_btn"
+            android:textColorHint="@color/member_list_search_text_color"
+            android:textSize="@dimen/login_edt_text_size"/>
+
+        <ImageView
+            android:id="@+id/btnChooseCurePersonSearch"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_search"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSkipNext"
+        android:layout_width="280dp"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="36dp"
+        android:layout_marginRight="180dp"
+        android:background="@mipmap/ic_login_btn_bg"
+        android:gravity="center"
+        android:text="@string/skip_next"
+        android:textColor="@color/color_login_btn"
+        android:textSize="@dimen/login_btn_text_size"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvChooseCurePersonList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnSkipNext"
+        android:layout_below="@id/layChooseCurePersonSearch"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="56dp"
+        android:layout_marginBottom="48dp"/>
+
+</RelativeLayout>

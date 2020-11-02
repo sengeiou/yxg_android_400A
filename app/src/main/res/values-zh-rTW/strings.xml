@@ -1,0 +1,253 @@
+<resources>
+    <!--login-->
+    <string name="app_name">玉玄宮</string>
+    <string name="login_edt_name_hint">賬號</string>
+    <string name="login_edt_psw_hint">密碼</string>
+    <string name="login_fg_psw">忘記密碼</string>
+    <string name="login">登&#160;錄</string>
+    <string name="has_send">已發送</string>
+    <string name="captcha_get_error">請獲取驗證碼</string>
+    <string name="captcha_not_correct">驗證碼輸入不正確</string>
+    <string name="phone_not_correct">請輸入手機號</string>
+    <string name="psw_not_correct">請輸入密碼</string>
+    <string name="input_user_name">請輸入用戶名</string>
+    <string name="submit_success">提交成功</string>
+    <string name="open_gps_title">定位服務</string>
+    <string name="open_gps_message">請打開GPS定位</string>
+
+    <!--main-->
+    <string name="start">開始</string>
+    <string name="cure">治療</string>
+    <string name="record">記錄</string>
+    <string name="member">成員</string>
+    <string name="list">列表</string>
+    <string name="main_home">首頁</string>
+    <string name="main_watch">智聯</string>
+    <string name="main_setting">設置</string>
+
+    <string name="app_update">軟件更新</string>
+    <string name="downloading">正在下載</string>
+    <string name="cancel">取消</string>
+    <string name="play">播放</string>
+    <string name="wifi_connect">鏈接Wi-Fi網絡</string>
+
+    <!--member list-->
+    <string name="back">返回</string>
+    <string name="member_list">成員列表</string>
+    <string name="member_list_edt_search_hint">請輸入</string>
+    <string name="item_member_num">編號%s</string>
+    <string name="go_cure">去治療</string>
+    <string name="please_input_info">請填寫完整信息</string>
+    <string name="boy">男</string>
+    <string name="girl">女</string>
+    <string name="delete">删除</string>
+
+    <!--cure detail-->
+    <string name="cure_detail_title">治療詳情</string>
+    <string name="retry_cure">再次治療</string>
+    <string name="choose_cure_method">選擇治療方式</string>
+    <string name="cure_person">治療人：%s</string>
+    <string name="cure_person_birthday">治療人生日：%s</string>
+    <string name="sorting_method">治療方式：%s</string>
+    <string name="sorting_head">治療頭：%s</string>
+    <string name="magnetic_field_intensity">磁場強度：%s</string>
+    <string name="best_acupoint">對應穴位：%s</string>
+    <string name="treat_time_duration">治療時長：%d分鐘</string>
+    <string name="treat_time">治療時間：%s</string>
+    <string name="little">低</string>
+    <string name="middle">中</string>
+    <string name="high">高</string>
+
+    <!--choose sorting method-->
+    <string name="choose_sorting_method">選擇治療方式</string>
+
+    <string name="pain">疼痛</string>
+    <string name="pain_sec">溫熱類</string>
+    <string name="inflammation">炎癥</string>
+    <string name="inflammation_sec">痹癥類</string>
+    <string name="the_lump">腫塊</string>
+    <string name="the_lump_sec">氣滯血瘀\n類</string>
+    <string name="three_high">三高癥</string>
+    <string name="three_high_sec">痰濕類</string>
+
+    <!--choose sorting method process-->
+    <string name="next">下一步</string>
+
+    <string name="title_pain">選擇疼痛治療方式</string>
+    <string name="pain_little">輕度\n疼痛</string>
+    <string name="pain_middle">中度\n疼痛</string>
+    <string name="pain_high">重度\n疼痛</string>
+
+    <string name="title_inflammation">選擇炎癥治療方式</string>
+    <string name="inflammation_little">輕度\n炎癥</string>
+    <string name="inflammation_middle">中度\n炎癥</string>
+    <string name="inflammation_high">重度\n炎癥</string>
+
+    <string name="title_the_lump">選擇腫塊治療方式</string>
+    <string name="the_lump_little">輕度\n腫塊</string>
+    <string name="the_lump_middle">中度\n腫塊</string>
+    <string name="the_lump_high">重度\n腫塊</string>
+
+    <string name="title_three_high">選擇三高治療方式</string>
+    <string name="high_blood_pressure">高血壓</string>
+    <string name="high_blood_pressure_normal">高血壓</string>
+    <string name="diabetes">糖尿病</string>
+    <string name="hyperlipidemia">高血脂</string>
+    <string name="hyperlipidemia_normal">高血脂</string>
+    <string name="title_high_blood_pressure">選擇高血壓方式</string>
+    <string name="high_blood_pressure_little">輕度\n高血壓</string>
+    <string name="high_blood_pressure_middle">中度\n高血壓</string>
+    <string name="high_blood_pressure_high">重度\n高血壓</string>
+    <string name="title_diabetes">選擇糖尿病方式</string>
+    <string name="diabetes_little">輕度\n糖尿病</string>
+    <string name="diabetes_middle">中度\n糖尿病</string>
+    <string name="diabetes_high">重度\n糖尿病</string>
+    <string name="title_hyperlipidemia">選擇高血脂方式</string>
+    <string name="hyperlipidemia_little">輕度\n高血脂</string>
+    <string name="hyperlipidemia_middle">中度\n高血脂</string>
+    <string name="hyperlipidemia_high">重度\n高血脂</string>
+
+    <string name="title_comb_head">選擇治療頭</string>
+    <string name="comb_head_left">左\n治療頭</string>
+    <string name="comb_head_double">雙\n治療頭</string>
+    <string name="comb_head_right">右\n治療頭</string>
+
+    <string name="comb_head_left3">左治療頭</string>
+    <string name="comb_head_double3">雙治療頭</string>
+    <string name="comb_head_right3">右治療頭</string>
+
+    <string name="comb_head_left2">左</string>
+    <string name="comb_head_right2">右</string>
+
+    <string name="title_magnetic_field_intensity">選擇磁場強度</string>
+    <string name="magnetic_field_intensity_high">高</string>
+    <string name="magnetic_field_intensity_middle">中</string>
+    <string name="magnetic_field_intensity_little">低</string>
+
+    <!--your current best acupoint-->
+    <string name="title_current_acupoint">您當前的對應穴位</string>
+    <string name="error_text">1、請檢查磁頭連接線\n2、請聯繫我們\n售後電話：086-0757-83368806</string>
+    <string name="error_tips">錯誤提示</string>
+    <string name="i_know">知道了</string>
+
+    <!--sorting-->
+    <string name="title_sorting">正在治療</string>
+    <string name="stop">停止</string>
+    <string name="confirm_title">您確定要停止治療嗎?</string>
+    <string name="pause">暫停</string>
+    <string name="visitor">遊客</string>
+
+    <!--cure record-->
+    <string name="title_cure_record">治療記錄</string>
+    <string name="modify_cure_method">修改治療方式</string>
+
+    <!--choose cure person-->
+    <string name="title_choose_cure_person">選擇治療人</string>
+    <string name="skip_next">跳過,下一步</string>
+    <string name="choose_member_please">請選擇成員</string>
+
+    <!--setting fragment-->
+    <string name="exit_login">退出登陸</string>
+    <string name="setting_my_info">我的信息</string>
+    <string name="setting_modify_psw">修改密碼</string>
+    <string name="setting_audio_tips">按鍵音</string>
+    <string name="setting_multi_language">語言設置</string>
+    <string name="setting_my_devices">我的設備</string>
+    <string name="setting_helper">使用幫助</string>
+    <string name="setting_about">關於我們</string>
+    <string name="setting_feedback">用戶反饋</string>
+
+    <!--watch fragment-->
+    <string name="watch_un_connect">未連接</string>
+    <string name="un_connect">未連接</string>
+    <string name="measure">測量</string>
+    <string name="measureing">測量中</string>
+    <string name="battery">電量:</string>
+    <string name="measure_record">測量記錄</string>
+    <string name="blood_pressure">血壓 %d-%dmmhg</string>
+    <string name="heart_rate">心率 %dbpm</string>
+    <string name="blood_oxygen">血氧 %dSpo2</string>
+    <string name="measure_detail">測量詳情</string>
+
+    <!--setting my info-->
+    <string name="name">姓名</string>
+    <string name="gender">性別</string>
+    <string name="birthday">生日</string>
+    <string name="phone">手機</string>
+    <string name="confirm">確定</string>
+    <string name="avatar">頭像</string>
+
+    <!--setting modify psw-->
+    <string name="phone_num">手機號</string>
+    <string name="verify_code">驗證碼</string>
+    <string name="psw">密碼</string>
+
+    <!--setting language-->
+    <string name="language_cn">中文簡體</string>
+    <string name="language_tw">中文繁體</string>
+    <string name="language_english">English</string>
+
+    <!--setting my devices-->
+    <string name="setting_my_device_name">設備名：%s</string>
+    <string name="setting_my_device_num">設備號：%s</string>
+    <string name="setting_my_device_activated">已激活</string>
+
+    <!--setting about us-->
+    <string name="about_us_version">版本：%s</string>
+    <string name="about_us_company_phone">公司電話：%s</string>
+    <string name="about_us_company_email">公司郵箱：%s</string>
+    <string name="about_us_company_webchat_public">公眾號：%s</string>
+    <string name="about_us_company_address">公司地址：%s</string>
+
+    <!--setting feedback-->
+    <string name="setting_feedback_hint">請輸入您的反饋內容</string>
+
+    <!--add or modify member-->
+    <string name="title_add_modify_member">修改/添加成員</string>
+    <string name="add_member">添加</string>
+
+    <!--choose birthday-->
+    <string name="title_choose_birthday">輸入生日</string>
+    <string name="calendar">公歷</string>
+    <string name="lunar_calendar">農歷</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+
+    <!--watch connect-->
+    <string name="connected_devices">已連接設備</string>
+    <string name="nearby_devices">附近設備</string>
+    <string name="my_devices">我的設備</string>
+    <string name="connect">已連接</string>
+
+    <!--measure detail-->
+    <string name="measure_average_heart_rate">平均心率</string>
+    <string name="measure_blood_pressure">血壓</string>
+    <string name="measure_blood_oxygen">血氧</string>
+    <string name="count_minutes">次/分鐘</string>
+    <string name="heart_rate_ok">心率正常</string>
+    <string name="heart_rate_less">心率過低</string>
+    <string name="heart_rate_more">心率過高</string>
+    <string name="heart_rate_desc">安靜狀態下，正常人的心率為60-100次/分鐘。運動是心率應控制118-156次/分鐘。</string>
+    <string name="blood_pressure_unit">mmHg</string>
+    <string name="blood_pressure_ok">血壓正常</string>
+    <string name="blood_pressure_less">血壓偏低</string>
+    <string name="blood_pressure_high">血壓偏高</string>
+    <string name="blood_pressure_desc">
+                                  正常成人安靜狀態下的血壓範圍較穩定，一般人的血壓正常值為90～140mmHg，低壓60～90mmHg。
+
+                        </string>
+    <string name="blood_oxygen_ok">血氧正常</string>
+    <string name="blood_oxygen_less">血氧偏低</string>
+    <string name="blood_oxygen_unit">%</string>
+    <string name="blood_oxygen_desc">
+                                  正常動脈血氧飽和度約94～100%，混合靜脈血氧飽和度約75%。
+
+                        </string>
+
+    <string name="connect_title">連接</string>
+    <string name="prompt">提示</string>
+    <string name="allow_permissions">請允許App使用定位權限</string>
+    <string name="go_settings">去設置</string>
+    <string name="tip_watching">正在測量中，請等待測量完成</string>
+</resources>

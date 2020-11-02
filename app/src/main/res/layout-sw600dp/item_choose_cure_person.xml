@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layChooseCurePerson"
+    android:layout_width="match_parent"
+    android:layout_height="146dp"
+    android:background="@mipmap/ic_item_member_list_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_detault_avatar"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvItemChooseCurePersonName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/item_member_text_color"
+                android:textSize="30sp"/>
+
+            <TextView
+                android:id="@+id/tvItemChooseCurePersonNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="21dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/item_member_text_color"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnPersonChecked"
+            android:layout_width="62px"
+            android:layout_height="62px"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="190dp"
+            android:src="@mipmap/ic_item_checked"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

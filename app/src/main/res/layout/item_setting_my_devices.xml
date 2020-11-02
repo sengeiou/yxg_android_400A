@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="116dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvSettingItemDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/setting_title_color"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tvSettingItemDeviceNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSettingItemDeviceName"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="9dp"
+        android:textColor="@color/setting_title_color"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/setting_my_device_activated"
+        android:textColor="@color/setting_title_color"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_main_watch">
+
+    <TextView
+        android:id="@+id/tvSortingTitle"
+        style="@style/PageTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_sorting"/>
+
+    <LinearLayout
+        android:id="@+id/layLeftCombHead"
+        android:layout_width="718dp"
+        android:layout_height="173dp"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="177dp"
+        android:background="@mipmap/ic_sorting_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="119dp"
+                    android:layout_height="170dp"
+                    android:src="@mipmap/ic_comb_logo"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/givLeftComb"
+                    android:layout_width="167dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/curing"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvLeftCombTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="8dp"
+                android:text="@string/comb_head_left2"
+                android:textColor="@color/color_login_btn"
+                android:textSize="@dimen/account_title_text_size"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvLeftCombTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical|left"
+            android:text="20:00"
+            android:textColor="@color/color_login_btn"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/layLeftPauseContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivLeftComb"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_main_center_btn"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLeftCombStartPause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/pause"
+                    android:textColor="@color/selector_main_btn_color"
+                    android:textSize="@dimen/account_title_text_size"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="718dp"
+        android:layout_height="173dp"
+        android:layout_below="@id/layLeftCombHead"
+        android:layout_marginLeft="177dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="177dp"
+        android:background="@mipmap/ic_sorting_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="119dp"
+                    android:layout_height="170dp"
+                    android:src="@mipmap/ic_comb_logo"/>
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/givRightComb"
+                    android:layout_width="167dp"
+                    android:layout_height="130dp"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/curing"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvRightCombTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="8dp"
+                android:text="@string/comb_head_right2"
+                android:textColor="@color/color_login_btn"
+                android:textSize="@dimen/account_title_text_size"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvRightCombTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical|left"
+            android:text="20:00"
+            android:textColor="@color/color_login_btn"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:id="@+id/layRightPauseContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivRightComb"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_main_center_btn"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRightCombStartPause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/pause"
+                    android:textColor="@color/selector_main_btn_color"
+                    android:textSize="@dimen/account_title_text_size"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="@dimen/small_btn_width"
+        android:layout_height="@dimen/small_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:background="@mipmap/ic_add_btn"
+        android:gravity="center"
+        android:text="@string/stop"
+        android:textColor="@color/color_login_btn"
+        android:textSize="45sp"/>
+
+</RelativeLayout>
